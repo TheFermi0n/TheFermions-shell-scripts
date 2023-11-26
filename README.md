@@ -9,7 +9,7 @@ This script allows for the seamless download and update of the PlayCover nightly
 1. Clone this repository:
 
    ```shell
-   git clone https://github.com/TheFermion/playcover-nightly-setup.git
+   git clone https://github.com/TheFermi0n/playcover-nightly-setup.git
    ```
 
 2. Move to the directory:
@@ -35,7 +35,7 @@ This script allows for the seamless download and update of the PlayCover nightly
 1. Clone this repository:
 
    ```shell
-   git clone https://github.com/TheFermion/playcover-nightly-setup.git
+   git clone https://github.com/TheFermi0n/playcover-nightly-setup.git
    ```
 
 2. Add an alias to your shell's configuration file (`~/.bashrc`, `~/.zshrc`, etc.):
@@ -79,7 +79,7 @@ This script allows for the seamless download and update of the PlayCover nightly
 ## Links
 
 - [PlayCover Repository](https://github.com/PlayCover/PlayCover) - Official PlayCover Repository
-- [Github Repository](https://github.com/TheFermion/playcover-nightly-setup)
+- [Github Repository](https://github.com/TheFermi0n/playcover-nightly-setup)
 - Manually download the nightly build from [nightly.link](https://nightly.link/PlayCover/PlayCover/workflows/2.nightly_release/develop)
 
 ## Contributing

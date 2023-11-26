@@ -172,7 +172,7 @@ function help_info {
   echo "A script to download and update the PlayCover nightly app."
   echo
   echo "Links:"
-  echo "  Github: https://github.com/TheFermion/playcover-nightly-setup"
+  echo "  Github: https://github.com/TheFermi0n/playcover-nightly-setup"
   echo "  Manual download: https://nightly.link/PlayCover/PlayCover/workflows/2.nightly_release/develop"
   usage_info
 }
