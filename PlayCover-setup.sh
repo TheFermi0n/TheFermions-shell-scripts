@@ -138,6 +138,17 @@ function install {
         echo "Detaching $DMG_FILE..."
         hdiutil detach -quiet "/Volumes/PlayCover"
         echo "App updated successfully to $LATEST_NIGHTLY_BUILD_NUMBER build of PlayCover nightly!"
+
+        # Prompt user to remove the downloaded DMG file after installation
+        echo "Do you want to remove the downloaded file from the Downloads folder? (y/n): "
+        read remove_dmg
+        if [[ $remove_dmg == "y" || $remove_dmg == "Y" ]]; then
+          rm "$DMG_FILE" # Remove the downloaded file after installation
+          echo "Removed the file from Downloads folder.."
+        else
+          echo "The file was not removed..."
+          echo "You can find it in $DMG_FILE"
+        fi
       else
         echo "Error: PlayCover.app not found in the mounted disk image."
       fi
@@ -155,7 +166,7 @@ function update {
 
   echo "Do you want to update the app? (y/n): "
   read -r update_app
-  
+
   if [[ $update_app == "y" || $update_app == "Y" ]]; then
     download
     install
